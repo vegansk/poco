@@ -21,9 +21,21 @@
 
 
 #include "Poco/Foundation.h"
+#undef __STRICT_ANSI__
 #include <float.h>
 #include <math.h>
 
+#define MCW_RC _MCW_RC
+#define SW_INEXACT 0x00000001 
+#define SW_UNDERFLOW 0x00000002
+#define SW_OVERFLOW 0x00000004
+#define SW_ZERODIVIDE 0x00000008
+#define SW_INVALID 0x00000010
+#define SW_DENORMAL 0x00080000
+#define RC_DOWN _RC_DOWN
+#define RC_UP _RC_UP
+#define RC_NEAR _RC_NEAR
+#define RC_CHOP _RC_CHOP
 
 namespace Poco {
 
